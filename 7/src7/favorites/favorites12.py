@@ -31,10 +31,21 @@ print(row["COUNT(*)"])
         #db.execute ("UPDATE posts SET likes = ? WHERE id =?", likes + 1, id);
 
 ######################SQL'S SOLUTION FOR RACE CONDITION########################
+#begin transaction
+#commit
+#rollback
 
-begin transaction
-commit
-rollback
+
+
+                #db.execute("BEGIN TRANSACTION")
+
+                #rows = db.execute("SELECT likes FROM posts WHERE id = ?", id);
+                #db.execute ("UPDATE posts SET likes = ? WHERE id =?", likes + 1, id);
+
+                #db.execute("COMMIT")
+
+
+
 
 
 

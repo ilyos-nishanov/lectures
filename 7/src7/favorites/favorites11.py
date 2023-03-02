@@ -15,6 +15,14 @@ rows = db.execute("SELECT COUNT(*) FROM favorites WHERE problem LIKE ?", "%" + f
          #cool cs50 function                                         #placeholder
 
 
+
+#############WHAT INSTAGRAM IS LITERALLY DOING
+
+        #rows = db.execute("SELECT likes FROM posts WHERE id = ?", id);
+        #likes = rows[0]["likes"]
+        #db.execute ("UPDATE posts SET likes = ? WHERE id =?", likes + 1, id);
+
+
 # Get first (and only) row
 row = rows[0]
 

@@ -5,8 +5,8 @@ import csv
 from cs50 import SQL
 
 # Open database
-db = SQL("sqlite:///favorites.db")
-
+db = SQL("sqlite:///favorites.db")   #industry-wide syntax (not only cs50 thing)
+                                     #which is telling to open fav.db file using sqlite3 technology
 # Prompt user for favorite
 favorite = input("Favorite: ")
 

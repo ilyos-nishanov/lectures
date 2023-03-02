@@ -12,7 +12,9 @@ favorite = input("Favorite: ")
 
 # Search for title
 rows = db.execute("SELECT COUNT(*) FROM favorites WHERE problem LIKE ?", "%" + favorite + "%")
+         #cool cs50 function
 
+         
 # Get first (and only) row
 row = rows[0]
 
